@@ -1,0 +1,40 @@
+{"scenario": "Blog Posting Introduction", "system": "Introduce blog posting features", "system_prompt": "블로그 포스팅 작업을 시작합니다. 다음 중 어떤 작업을 수행하시겠습니까? 1. 새 포스트 작성, 2. 기존 포스트 수정, 3. 포스팅 일정 관리", "user_parameter": "blog_action", "user_input": "1"}
+{"scenario": "New Post Creation", "system": "Prompt for new post details", "system_prompt": "새 포스트의 제목을 입력해주세요.", "user_parameter": "post_title", "user_input": "새로운 시작"}
+{"scenario": "Enter Post Content", "system": "Ask for post content", "system_prompt": "포스트의 내용을 입력해주세요.", "user_parameter": "post_content", "user_input": "여기에 새로운 블로그 포스트의 내용이 들어갑니다."}
+{"scenario": "Publishing Options", "system": "Provide publishing options", "system_prompt": "포스트를 언제 게시하시겠습니까? (즉시 게시, 날짜/시간 설정)", "user_parameter": "publish_option", "user_input": "즉시 게시"}
+{"scenario": "Immediate Publishing", "system": "Publish post immediately", "system_prompt": "포스트가 즉시 게시됩니다. 게시 완료!", "user_parameter": "publish_now", "user_input": "확인"}
+{"scenario": "Schedule Post", "system": "Schedule post for later", "system_prompt": "게시할 날짜와 시간을 입력해주세요. (예: YYYY-MM-DD HH:MM)", "user_parameter": "schedule_time", "user_input": "2024-10-15 08:00"}
+{"scenario": "Confirm Scheduled Post", "system": "Confirm scheduled post details", "system_prompt": "포스트가 예정된 시간에 게시될 예정입니다. 게시 일정을 확인해주세요.", "user_parameter": "confirm_schedule", "user_input": "확인"}
+{"scenario": "Edit Existing Post", "system": "Prompt to select post to edit", "system_prompt": "수정할 기존 포스트의 제목을 입력해주세요.", "user_parameter": "edit_post_title", "user_input": "기존 포스트 수정하기"}
+{"scenario": "Retrieve Post for Editing", "system": "Retrieve post details", "system_prompt": "포스트를 불러옵니다. 내용 수정을 진행해주세요.", "user_parameter": "edit_content", "user_input": "포스트의 내용을 여기에 업데이트합니다."}
+{"scenario": "Confirm Post Update", "system": "Confirm updated post details", "system_prompt": "수정된 포스트 내용을 확인하고 게시하시겠습니까?", "user_parameter": "confirm_edit", "user_input": "수정 내용 게시"}
+{"scenario": "Republish Edited Post", "system": "Republish the updated post", "system_prompt": "수정된 포스트가 재게시됩니다. 재게시 완료!", "user_parameter": "republish_post", "user_input": "확인"}
+{"scenario": "Post Management Menu", "system": "Back to post management options", "system_prompt": "다른 블로그 관리 작업을 계속하시겠습니까? (예: 새 포스트 추가, 기존 포스트 보기)", "user_parameter": "continue_blogging", "user_input": "기존 포스트 보기"}
+{"scenario": "View All Posts", "system": "Display all posts", "system_prompt": "모든 포스트를 표시합니다. 선택하실 포스트를 클릭하세요.", "user_parameter": "view_posts", "user_input": "모든 포스트 확인"}
+{"scenario": "Select Post to View", "system": "Select a post to view details", "system_prompt": "상세 확인을 원하는 포스트의 제목을 입력해주세요.", "user_parameter": "select_post_detail", "user_input": "상세 포스트 제목"}
+{"scenario": "Display Post Details", "system": "Show selected post details", "system_prompt": "선택한 포스트의 상세 정보입니다. 내용을 확인하세요.", "user_parameter": "show_post_details", "user_input": "상세 정보 확인"}
+{"scenario": "Post Comment Options", "system": "Options for post comments", "system_prompt": "이 포스트에 댓글을 추가하시겠습니까?", "user_parameter": "add_comment", "user_input": "댓글 추가"}
+{"scenario": "Add Comment to Post", "system": "Add comment to the post", "system_prompt": "댓글 내용을 입력해주세요.", "user_parameter": "comment_content", "user_input": "훌륭한 포스트입니다!"}
+{"scenario": "Confirm Comment Publication", "system": "Confirm comment publication", "system_prompt": "댓글이 추가되었습니다. 확인하세요.", "user_parameter": "publish_comment", "user_input": "댓글 확인"}
+{"scenario": "Manage Post Tags", "system": "Options to manage post tags", "system_prompt": "포스트에 태그를 추가 또는 수정하시겠습니까?", "user_parameter": "manage_tags", "user_input": "태그 추가"}
+{"scenario": "Add Tags to Post", "system": "Add tags to the post", "system_prompt": "추가할 태그를 입력해주세요. (예: #여행, #건강)", "user_parameter": "tags_input", "user_input": "#여행, #건강"}
+{"scenario": "Edit Tags on Post", "system": "Edit existing tags on the post", "system_prompt": "수정할 태그를 선택하거나 새로운 태그를 입력해주세요.", "user_parameter": "edit_tags", "user_input": "태그 수정: #기술, #혁신"}
+{"scenario": "Confirm Tag Update", "system": "Confirm tag updates", "system_prompt": "태그가 업데이트되었습니다. 최종 확인해주세요.", "user_parameter": "confirm_tag_update", "user_input": "태그 업데이트 확인"}
+{"scenario": "Delete Post Option", "system": "Offer option to delete a post", "system_prompt": "포스트를 삭제하시겠습니까?", "user_parameter": "delete_post", "user_input": "예, 포스트 삭제"}
+{"scenario": "Confirm Post Deletion", "system": "Confirm post deletion", "system_prompt": "포스트가 삭제됩니다. 이 작업은 되돌릴 수 없습니다. 계속하시겠습니까?", "user_parameter": "confirm_deletion", "user_input": "예, 삭제 계속"}
+{"scenario": "Post Deletion Completion", "system": "Complete the post deletion", "system_prompt": "포스트가 성공적으로 삭제되었습니다.", "user_parameter": "post_deleted", "user_input": "삭제 완료"}
+{"scenario": "Search Posts", "system": "Provide search functionality for posts", "system_prompt": "검색할 키워드를 입력해주세요. (예: 여행)", "user_parameter": "search_keyword", "user_input": "여행"}
+{"scenario": "Display Search Results", "system": "Show search results", "system_prompt": "검색 결과가 표시됩니다. 관심 있는 포스트를 선택해주세요.", "user_parameter": "select_search_result", "user_input": "검색 결과 선택"}
+{"scenario": "Detailed View of Search Result", "system": "Show details of selected search result", "system_prompt": "선택한 검색 결과의 상세 정보입니다. 내용을 확인하세요.", "user_parameter": "view_search_detail", "user_input": "상세 정보 확인"}
+{"scenario": "Exit Post Management", "system": "Option to exit post management", "system_prompt": "블로그 포스팅 관리를 종료하시겠습니까?", "user_parameter": "exit_blogging", "user_input": "예, 종료"}
+{"scenario": "Return to Main Menu", "system": "Return to the main menu of MarbleAI", "system_prompt": "메인 메뉴로 돌아갑니다.", "user_parameter": "main_menu", "user_input": "메인 메뉴로 돌아가기"}
+{"scenario": "Post Archiving Option", "system": "Offer post archiving option", "system_prompt": "이 포스트를 아카이빙하시겠습니까?", "user_parameter": "archive_post", "user_input": "예, 아카이브"}
+{"scenario": "Confirm Post Archiving", "system": "Confirm the archiving of the post", "system_prompt": "포스트가 아카이브됩니다. 확인해주세요.", "user_parameter": "confirm_archiving", "user_input": "아카이브 확인"}
+{"scenario": "Post Statistics", "system": "Show post statistics", "system_prompt": "포스트의 통계를 보여드립니다. 조회수, 좋아요 수 등 정보를 확인하세요.", "user_parameter": "post_stats", "user_input": "통계 확인"}
+{"scenario": "Update Post Categories", "system": "Prompt to update categories for the post", "system_prompt": "포스트의 카테고리를 업데이트하시겠습니까?", "user_parameter": "update_categories", "user_input": "예, 카테고리 업데이트"}
+{"scenario": "Enter New Categories", "system": "Enter new categories for the post", "system_prompt": "새로운 카테고리를 입력해주세요. (예: 기술, 라이프스타일)", "user_parameter": "new_categories", "user_input": "기술, 라이프스타일"}
+{"scenario": "Confirm Category Update", "system": "Confirm updates to categories", "system_prompt": "카테고리가 업데이트되었습니다. 확인해주세요.", "user_parameter": "confirm_category_update", "user_input": "업데이트 확인"}
+{"scenario": "Add Featured Image", "system": "Prompt to add a featured image to the post", "system_prompt": "포스트에 대표 이미지를 추가하시겠습니까?", "user_parameter": "add_image", "user_input": "예, 이미지 추가"}
+{"scenario": "Upload Image", "system": "Upload a featured image", "system_prompt": "이미지 파일을 업로드해주세요.", "user_parameter": "image_upload", "user_input": "이미지 파일 업로드"}
+{"scenario": "Confirm Image Upload", "system": "Confirm the image upload", "system_prompt": "이미지가 업로드되었습니다. 확인해주세요.", "user_parameter": "confirm_image", "user_input": "이미지 확인"}
+{"scenario": "Finalize Post Updates", "system": "Finalize all updates to the post", "system_prompt": "모든 업데이트가 완료되었습니다. 포스트를 재게시하시겠습니까?", "user_parameter": "finalize_updates", "user_input": "예, 재게시"}

@@ -1,0 +1,20 @@
+{"scenario": "SEO Enhancement Intro", "system": "Introduce SEO enhancement options", "system_prompt": "SEO 향상 옵션을 시작합니다. 자동 블로그 포스팅 최적화를 사용하여 웹사이트의 노출을 높이겠습니까?", "user_parameter": "seo_enhancement", "user_input": "예"}
+{"scenario": "Auto Blog Setup", "system": "Setup automatic blog posting", "system_prompt": "자동 블로그 포스팅을 설정합니다. 주요 키워드를 입력해주세요.", "user_parameter": "keywords", "user_input": "디지털 마케팅, 온라인 광고"}
+{"scenario": "Confirm Keywords", "system": "Confirm keywords for SEO", "system_prompt": "입력하신 키워드로 블로그 포스팅이 최적화됩니다. 확인해주세요.", "user_parameter": "confirm_keywords", "user_input": "확인"}
+{"scenario": "Schedule Auto Posts", "system": "Schedule automatic posts", "system_prompt": "자동 포스팅의 빈도를 설정해주세요. (예: 매주, 매월)", "user_parameter": "post_frequency", "user_input": "매주"}
+{"scenario": "Auto Post Content Strategy", "system": "Develop content strategy for posts", "system_prompt": "자동 포스팅의 내용 전략을 개발합니다. 대상 독자층을 입력해주세요.", "user_parameter": "target_audience", "user_input": "중소기업 소유자"}
+{"scenario": "Backlink Setup", "system": "Setup backlinks to website", "system_prompt": "블로그 포스트에서 웹사이트로의 백링크를 설정합니다. 웹사이트 URL을 입력해주세요.", "user_parameter": "website_url", "user_input": "www.example.com"}
+{"scenario": "Confirm Backlink", "system": "Confirm backlink creation", "system_prompt": "생성된 백링크를 확인해주세요. 백링크는 모든 포스트에 포함됩니다.", "user_parameter": "confirm_backlink", "user_input": "확인"}
+{"scenario": "SEO Monitoring Setup", "system": "Setup SEO monitoring", "system_prompt": "SEO 모니터링을 설정하여 키워드 순위 변화를 추적합니다. 모니터링을 시작하시겠습니까?", "user_parameter": "start_monitoring", "user_input": "예"}
+{"scenario": "SEO Monitoring Frequency", "system": "Set frequency for SEO monitoring", "system_prompt": "SEO 모니터링 빈도를 설정해주세요. (예: 매일, 매주)", "user_parameter": "monitoring_frequency", "user_input": "매주"}
+{"scenario": "Review Auto Post Results", "system": "Review results of automatic postings", "system_prompt": "자동 포스팅 결과를 검토합니다. 최근 포스팅 보고서를 확인하시겠습니까?", "user_parameter": "review_posting", "user_input": "예"}
+{"scenario": "Adjust Auto Posting Strategy", "system": "Adjust automatic posting strategy", "system_prompt": "자동 포스팅 전략을 조정합니다. 추가할 새로운 키워드가 있습니까?", "user_parameter": "new_keywords", "user_input": "소셜 미디어 마케팅"}
+{"scenario": "Confirm Strategy Update", "system": "Confirm update to posting strategy", "system_prompt": "새로운 키워드가 포스팅 전략에 추가되었습니다. 업데이트를 승인하십시오.", "user_parameter": "confirm_update", "user_input": "승인"}
+{"scenario": "Link Building Strategy", "system": "Discuss link building strategy", "system_prompt": "링크 빌딩 전략을 논의합니다. 다른 웹사이트와의 협력을 고려하시겠습니까?", "user_parameter": "link_building", "user_input": "예"}
+{"scenario": "Partnership Opportunities", "system": "Identify partnership opportunities", "system_prompt": "협력 가능한 파트너 웹사이트를 탐색합니다. 파트너십을 위한 기준을 입력해주세요.", "user_parameter": "partnership_criteria", "user_input": "유사 산업, 높은 도메인 권위"}
+{"scenario": "Confirm Partnerships", "system": "Confirm potential partnerships", "system_prompt": "파트너십 기회를 확인했습니다. 파트너 리스트를 검토하고 선택해주세요.", "user_parameter": "select_partners", "user_input": "Partner A, Partner B"}
+{"scenario": "Implement Link Exchanges", "system": "Implement link exchanges with partners", "system_prompt": "선택한 파트너와 링크 교환을 구현합니다. 진행을 승인하십시오.", "user_parameter": "confirm_link_exchange", "user_input": "승인"}
+{"scenario": "Track Link Effectiveness", "system": "Track effectiveness of link exchanges", "system_prompt": "링크 교환의 효과를 추적합니다. 첫 번째 보고서를 확인하시겠습니까?", "user_parameter": "review_link_report", "user_input": "예"}
+{"scenario": "Adjust Link Strategy", "system": "Adjust link building strategy based on results", "system_prompt": "링크 빌딩 전략을 결과에 따라 조정합니다. 추가 조정이 필요합니까?", "user_parameter": "adjust_link_strategy", "user_input": "조정 필요"}
+{"scenario": "Finalize SEO Enhancements", "system": "Finalize all SEO enhancements", "system_prompt": "모든 SEO 향상 조치가 완료되었습니다. 최종 검토를 하시겠습니까?", "user_parameter": "final_seo_review", "user_input": "검토"}
+{"scenario": "Complete SEO Automation", "system": "Complete the setup of SEO automation", "system_prompt": "SEO 자동화 설정이 완료되었습니다. 이제 모든 포스트가 최적화되어 자동 게시됩니다.", "user_parameter": "complete_automation", "user_input": "완료 확인"}

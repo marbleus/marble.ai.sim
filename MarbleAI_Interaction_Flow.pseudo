@@ -1,0 +1,245 @@
+// 초기 환영 및 서비스 안내
+if (사용자가 시스템에 접속) {
+    display("안녕하세요! MarbleAI에 오신 것을 환영합니다.")
+    display("원하시는 서비스 번호를 입력해 주세요.")
+    display("1. 웹사이트 빌딩 AI")
+    display("2. 블로그 포스팅 AI")
+    display("3. SEO 관리 AI")
+    display("4. CRM 자동화 AI")
+    input = 사용자 입력 받기
+}
+
+// 웹사이트 빌딩 AI
+if (input == 1) {
+    display("웹사이트 빌딩을 시작합니다. 먼저 기본 정보를 입력해주세요.")
+    display("웹사이트의 이름을 입력해 주세요:")
+    web_name = 사용자로부터 입력 받기
+    if (web_name is empty) {
+        display("웹사이트 이름은 필수입니다. 다시 입력해주세요.")
+        web_name = 사용자로부터 다시 입력 받기
+    }
+
+    display("웹사이트의 목적을 입력해주세요 (예: 상품 판매, 회사 소개):")
+    web_purpose = 사용자로부터 입력 받기
+    if (web_purpose is not in ['상품 판매', '회사 소개', '개인 블로그']) {
+        display("유효하지 않은 입력입니다. 다시 입력해주세요.")
+        web_purpose = 사용자로부터 다시 입력 받기
+    }
+
+    display("메뉴 및 페이지 구성을 시작합니다. 필요한 페이지를 선택해 주세요 (1. 홈, 2. 소개, 3. 연락처):")
+    menu_options = 사용자로부터 입력 받기
+    switch (menu_options) {
+        case "1":
+            addPage("홈")
+        case "2":
+            addPage("소개")
+        case "3":
+            addPage("연락처")
+        default:
+            display("잘못된 선택입니다. 다시 선택해 주세요.")
+            menu_options = 사용자로부터 다시 입력 받기
+    }
+
+    display("디자인 템플릿을 선택해 주세요 (1. 간단, 2. 전문가, 3. 맞춤형):")
+    design_template = 사용자로부터 입력 받기
+    switch (design_template) {
+        case "1":
+            applyDesignTemplate("간단")
+        case "2":
+            applyDesignTemplate("전문가")
+        case "3":
+            applyDesignTemplate("맞춤형")
+        default:
+            display("잘못된 선택입니다. 다시 선택해 주세요.")
+            design_template = 사용자로부터 다시 입력 받기
+    }
+}
+// 디자인 미리보기 및 수정
+display("선택한 디자인을 미리보고 있습니다. 만족하시나요? (1. 예, 2. 아니오):")
+design_approval = 사용자로부터 입력 받기
+if (design_approval == "1") {
+    display("디자인이 승인되었습니다. 웹사이트를 배포 준비를 진행합니다.")
+} else {
+    display("어떤 부분을 수정하고 싶으신가요? (1. 색상 변경, 2. 폰트 변경, 3. 레이아웃 변경):")
+    design_change_option = 사용자로부터 입력 받기
+    switch (design_change_option) {
+        case "1":
+            display("새로운 색상을 선택해주세요:")
+            new_color = 사용자로부터 입력 받기
+            updateColor(new_color)
+            display("색상이 업데이트되었습니다.")
+        case "2":
+            display("새로운 폰트 스타일을 선택해주세요:")
+            new_font = 사용자로부터 입력 받기
+            updateFont(new_font)
+            display("폰트 스타일이 업데이트되었습니다.")
+        case "3":
+            display("새로운 레이아웃을 선택해주세요:")
+            new_layout = 사용자로부터 입력 받기
+            updateLayout(new_layout)
+            display("레이아웃이 업데이트되었습니다.")
+        default:
+            display("잘못된 선택입니다. 다시 입력해주세요.")
+            design_change_option = 사용자로부터 다시 입력 받기
+    }
+    display("수정된 디자인을 다시 미리보고 있습니다. 이제 승인하시겠습니까? (1. 예, 2. 아니오):")
+    final_approval = 사용자로부터 입력 받기
+    if (final_approval == "1") {
+        display("최종 디자인이 승인되었습니다.")
+    } else {
+        display("디자인 승인이 거절되었습니다. 고객 지원에 문의해주세요.")
+    }
+}
+
+// 배포
+if (final_approval == "1") {
+    display("웹사이트 배포 준비가 완료되었습니다. 배포를 시작하시겠습니까? (1. 예, 2. 아니오):")
+    deployment_confirmation = 사용자로부터 입력 받기
+    if (deployment_confirmation == "1") {
+        performDeployment()
+        display("웹사이트가 성공적으로 배포되었습니다. 웹사이트 링크는 다음과 같습니다: [웹사이트 URL]")
+    } else {
+        display("배포가 취소되었습니다. 언제든지 준비가 되면 배포를 진행해주세요.")
+    }
+} else {
+    display("최종 디자인 승인이 완료되지 않았습니다. 디자인 검토를 계속해주세요.")
+}
+// 블로그 포스팅 AI
+if (input == 2) {
+    display("블로그 포스팅 작업을 시작합니다. 아래 옵션에서 선택해 주세요:")
+    display("1. 새 포스트 작성")
+    display("2. 기존 포스트 수정")
+    display("3. 포스팅 일정 관리")
+    blog_action = 사용자로부터 입력 받기
+
+    // 새 포스트 작성
+    if (blog_action == "1") {
+        display("새 포스트의 제목을 입력해주세요:")
+        post_title = 사용자로부터 입력 받기
+        display("포스트의 내용을 입력해주세요:")
+        post_content = 사용자로부터 입력 받기
+        display("포스트를 언제 게시하시겠습니까? (예: YYYY-MM-DD)")
+        post_date = 사용자로부터 입력 받기
+        createNewPost(post_title, post_content, post_date)
+        display("포스트가 생성되었습니다. 게시를 승인하시겠습니까? (1. 예, 2. 아니오)")
+        post_approval = 사용자로부터 입력 받기
+        if (post_approval == "1") {
+            publishPost()
+            display("포스트가 성공적으로 게시되었습니다.")
+        } else {
+            display("게시가 취소되었습니다.")
+        }
+    }
+
+    // 기존 포스트 수정
+    elif (blog_action == "2") {
+        display("수정할 포스트의 제목을 입력해주세요:")
+        post_title = 사용자로부터 입력 받기
+        display("새로운 내용을 입력해주세요:")
+        new_content = 사용자로부터 입력 받기
+        updatePost(post_title, new_content)
+        display("포스트가 수정되었습니다. 재게시를 원하시면 '예'를 입력해주세요:")
+        republish = 사용자로부터 입력 받기
+        if (republish == "예") {
+            republishPost(post_title)
+            display("포스트가 성공적으로 재게시되었습니다.")
+        }
+    }
+
+    // 포스팅 일정 관리
+    elif (blog_action == "3") {
+        display("게시할 날짜를 입력해주세요 (예: YYYY-MM-DD):")
+        scheduling_date = 사용자로부터 입력 받기
+        manageScheduling(scheduling_date)
+        display("포스팅 일정이 설정되었습니다.")
+    }
+}
+
+// SEO 관리 AI
+if (input == 3) {
+    display("SEO 관리 기능을 시작합니다. 아래 작업을 선택해주세요:")
+    display("1. 키워드 최적화")
+    display("2. 콘텐츠 분석")
+    display("3. 백링크 관리")
+    seo_task = 사용자로부터 입력 받기
+
+    // 키워드 최적화
+    if (seo_task == "1") {
+        display("최적화할 키워드를 입력해주세요:")
+        keywords = 사용자로부터 입력 받기
+        display("키워드 최적화를 진행할 페이지 URL을 입력해주세요:")
+        page_url = 사용자로부터 입력 받기
+        optimizeKeywords(page_url, keywords)
+        display("키워드 최적화가 완료되었습니다.")
+    }
+
+    // 콘텐츠 분석
+    elif (seo_task == "2") {
+        display("분석할 콘텐츠가 있는 페이지 URL을 입력해주세요:")
+        page_url = 사용자로부터 입력 받기
+        analyzeContent(page_url)
+        display("콘텐츠 분석이 완료되었습니다. 결과를 확인해주세요.")
+    }
+
+    // 백링크 관리
+    elif (seo_task == "3") {
+        display("백링크를 관리할 페이지 URL을 입력해주세요:")
+        page_url = 사용자로부터 입력 받기
+        manageBacklinks(page_url)
+        display("백링크 관리가 완료되었습니다.")
+    }
+}
+// CRM 자동화 AI
+if (input == 4) {
+    display("CRM 자동화 작업을 시작합니다. 아래 작업을 선택해주세요:")
+    display("1. 고객 데이터 관리")
+    display("2. 마케팅 자동화 설정")
+    display("3. 세일즈 파이프라인 분석")
+    crm_task = 사용자로부터 입력 받기
+
+    // 고객 데이터 관리
+    if (crm_task == "1") {
+        display("고객 데이터 관리 작업을 선택해주세요:")
+        display("1. 새 고객 정보 입력")
+        display("2. 기존 고객 정보 수정")
+        display("3. 고객 데이터 분석")
+        data_management_option = 사용자로부터 입력 받기
+
+        if (data_management_option == "1") {
+            display("새 고객의 정보를 입력해주세요 (이름, 연락처, 이메일 등):")
+            new_customer_info = 사용자로부터 입력 받기
+            createCustomer(new_customer_info)
+            display("새 고객 정보가 성공적으로 추가되었습니다.")
+        }
+        elif (data_management_option == "2") {
+            display("수정할 고객의 ID 또는 이름을 입력해주세요:")
+            customer_id = 사용자로부터 입력 받기
+            display("수정할 정보와 새로운 값을 입력해주세요:")
+            updated_info = 사용자로부터 입력 받기
+            updateCustomer(customer_id, updated_info)
+            display("고객 정보가 성공적으로 업데이트되었습니다.")
+        }
+        elif (data_management_option == "3") {
+            display("분석할 고객 세그먼트 또는 특정 기준을 입력해주세요:")
+            analysis_criteria = 사용자로부터 입력 받기
+            analyzeCustomerData(analysis_criteria)
+            display("고객 데이터 분석 결과를 확인해주세요.")
+        }
+    }
+
+    // 마케팅 자동화 설정
+    elif (crm_task == "2") {
+        display("적용할 마케팅 자동화 유형을 선택해주세요 (이메일, 소셜 미디어, 이벤트):")
+        marketing_type = 사용자로부터 입력 받기
+        setupMarketingAutomation(marketing_type)
+        display("마케팅 자동화가 설정되었습니다. 캠페인이 곧 시작됩니다.")
+    }
+
+    // 세일즈 파이프라인 분석
+    elif (crm_task == "3") {
+        display("분석할 세일즈 파이프라인 단계를 선택해주세요 (예: 리드 생성, 기회 평가, 거래 마감):")
+        pipeline_stage = 사용자로부터 입력 받기
+        analyzeSalesPipeline(pipeline_stage)
+        display("세일즈 파이프라인 분석 결과가 준비되었습니다. 세부 결과를 확인해주세요.")
+    }
+}
